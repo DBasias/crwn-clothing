@@ -3,7 +3,7 @@ import React from 'react';
 import './styles.scss';
 
 const MenuItem = ({ title, imageUrl, size }) => (
-  <div className={`menu-item ${size}`}>
+  <div className={`${size} menu-item`}>
     <div
       className='background-image'
       style={{ backgroundImage: `url(${imageUrl})` }}
