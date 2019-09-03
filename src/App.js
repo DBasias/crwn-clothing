@@ -13,6 +13,7 @@ import CheckoutPage from './pages/CheckoutPage';
 import Header from './components/Header';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+
 import { setCurrentUser } from './redux/user/actions';
 import { selectCurrentUser } from './redux/user/selectors';
 
@@ -32,9 +33,8 @@ class App extends Component {
             ...snapShot.data()
           });
         });
-      } else {
-        setCurrentUser(userAuth);
       }
+      setCurrentUser(userAuth);
     });
   }
 
