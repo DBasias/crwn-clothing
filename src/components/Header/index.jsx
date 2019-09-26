@@ -2,12 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { ReactComponent as Logo } from '../../assets/crown.svg';
 import CartIcon from '../CartIcon';
 import CartDropdown from '../CartDropdown';
 import { selectCurrentUser } from '../../redux/user/selectors';
 import { selectCartHidden } from '../../redux/cart/selectors';
 import { signOutStart } from '../../redux/user/actions';
+
+import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 import {
   HeaderContainer,
