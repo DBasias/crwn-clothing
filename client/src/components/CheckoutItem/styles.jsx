@@ -42,7 +42,11 @@ export const QuantityContainer = styled(TextContainer)`
   }
 `;
 
+QuantityContainer.displayName = 'QuantityContainer';
+
 export const RemoveButtonContainer = styled.div`
   padding-left: 12px;
   cursor: pointer;
 `;
+
+RemoveButtonContainer.displayName = 'RemoveButtonContainer';
