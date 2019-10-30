@@ -18,7 +18,7 @@ const StripeCheckoutButton = ({ price }) => {
         alert('Payment was successful');
       })
       .catch(error => {
-        console.log('Payment error: ', JSON.parse(error));
+        console.log('Payment error: ', error);
         alert(
           'There was an issue with your payment. Please make sure to use provided credit card.'
         );
