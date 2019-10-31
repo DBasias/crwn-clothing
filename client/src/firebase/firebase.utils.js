@@ -32,7 +32,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         ...additionalData
       });
     } catch (err) {
-      console.error('Error creating user: ', err);
+      console.error('Error creating user: ', err.message);
     }
   }
 
